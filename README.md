@@ -8,3 +8,5 @@ Usage example:
     [viewTest setProgressType:BCProgressViewTypeStraightLine];
     
 There are 3 types of progress supported till now ,please refer to .h file.
+
+pod install command: pod 'BCProgressView', '~> 0.0.1'
