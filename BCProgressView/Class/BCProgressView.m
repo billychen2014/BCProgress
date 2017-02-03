@@ -40,11 +40,10 @@
  */
 - (void)layoutSubviews {
     
-    NSLog(@"layoutSubviews");
     if (self.progressType == BCProgressViewTypeStraightLine) {
         
         [self createStraightLineProgress];
-    } else if(self.progressType  == BCProgressViewTypeGradientLine) {
+    }else if(self.progressType  == BCProgressViewTypeGradientLine) {
         
         [self createGradientLineProgress];
     } else if(self.progressType  == BCProgressViewTypeCircle) {
@@ -229,8 +228,8 @@
     
     //适合于view已经创建成功，但是要修改某个属性值的时候
     
-    NSLog(@"修改");
-    [self setNeedsLayout];
+
+//    [self setNeedsLayout];
 }
 
 - (void)regsiterKVO {

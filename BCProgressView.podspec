@@ -8,13 +8,14 @@ Pod::Spec.new do |s|
   }
 
   s.homepage     = "https://github.com/billychen2014/BCProgress"
-
   s.license      = "ZuoZH"
-
+  
   s.author             = { "chenchuan" => "chenchuan@zuozh.com" }
-  s.source       = { :git => "https://github.com/billychen2014/BCProgress.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/billychen2014/BCProgress.git", :tag => "0.0.1" }
 
-  s.source_files  = "Classes", "BCProgressView/Classes/*.{h,m}"
+  s.source_files  = "Classes", "BCProgressView/Class/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
-
+  s.platform     = :ios, '7.0'
+  s.framework    = 'QuartzCore'
+  s.requires_arc = true
 end
